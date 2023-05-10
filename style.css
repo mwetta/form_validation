@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;500&family=Raleway:wght@100;500&display=swap');
+
+:root {
+    /* CSS HEX */
+    --powder-blue: #c0deddff;
+    --dark-sky-blue: #7fbdd4ff;
+    --persian-plum: #77191eff;
+    --maximum-red: #cd2f24ff;
+    --arylide-yellow: #ebd65eff;
+
+    /* CSS HSL */
+    --powder-blue: hsla(178, 31%, 81%, 1);
+    --dark-sky-blue: hsla(196, 50%, 66%, 1);
+    --persian-plum: hsla(357, 65%, 28%, 1);
+    --maximum-red: hsla(4, 70%, 47%, 1);
+    --arylide-yellow: hsla(51, 78%, 65%, 1);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#myForm {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.validate {}
+
+:required {}
+
+:optional {}
+
+:valid {}
+
+input:invalid {
+    border: 1px solid var(--maximum-red);
+}
+
+input:placeholder-shown {}

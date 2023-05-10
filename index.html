@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation with JavaScript Constraint Validation API</title>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="container">
+        <form class="validate" action="" id="myForm">
+            <label for="email">
+                Email Address
+            </label><input type="email" id="email" required />
+            <span class="email"></span>
+            <label for="country">
+                Country
+            </label>
+            <select id="country" required>
+                <option value="ch">Switzerland</option>
+                <option value="fr">France</option>
+                <option value="de">Germany</option>
+                <option value="nl">The Netherlands</option>
+                <option value="us">United States</option>
+            </select>
+            <label for="ZIP">
+                Zip Code
+            </label><input type="text" id="ZIP" required />
+            <span class="ZIP"></span>
+            <label for="password">
+                Password
+            </label><input type="text" id="password" required />
+            <span class="password">
+            </span>
+            <ul class="errors"></ul>
+            <label for="confirmation">
+                Password Confirmation
+            </label><input type="text" id="confirmation" required />
+            <span class="confirmation"></span>
+            <input type="submit" value="Validate">
+        </form>
+    </div>
+    <div class="container"></div>
+    <!-- notes -->
+    <!-- form 
+        label & input & error messages
+
+            email 
+            country 
+            zip code
+            password 
+            password confirmation
+            submit
+                check errors 
+        
+        
+        -->
+
+
+</body>
+
+</html>
